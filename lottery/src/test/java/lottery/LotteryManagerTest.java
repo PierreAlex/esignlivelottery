@@ -31,7 +31,7 @@ public class LotteryManagerTest extends TestCase {
 		lottery.addParticipant("1");
 		lottery.addParticipant("1");
 		lottery.draw();
-		assertEquals("1st ball      2nd ball     3rd ball\n1: 11.25$     1: 2.25$     1: 1.5$", lottery.getResult().getResultMessage().trim());
+		assertEquals("1st ball       2nd ball      3rd ball\n1: 161.25$     1: 32.25$     1: 21.5$", lottery.getResult().getResultMessage().trim());
 	}
 	
 	@Test

@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class LotteryManager {
 	
+	private static final int INITIAL_POT = 200;
 	private static final String PARTICIPANT_ADDED_PARTICIPANT_NUMBER = "Participant added. Participant number : ";
 	private static final String SUCCESSFUL_DRAW_TO_SEE_RESULT_TYPE_WINNERS = "Successful draw. To see result type winners.";
 	private static final String MORE_PARTICIPANT = "You need more participant (Min 3). You currently have ";
@@ -38,7 +39,7 @@ public class LotteryManager {
 			return;
 		}
 		Random random = new Random();
-		int totalPot = participationList.size() * COSTPERPARTICIPATION / 2;
+		int totalPot = INITIAL_POT + participationList.size() * COSTPERPARTICIPATION / 2;
 		result.setFirstPrize(totalPot * 0.75);
 		result.setSecondPrize(totalPot * 0.15);
 		result.setThirdPrize(totalPot * 0.10);
