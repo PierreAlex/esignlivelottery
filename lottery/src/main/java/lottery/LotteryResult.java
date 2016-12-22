@@ -1,7 +1,8 @@
 package lottery;
 
 /**
- * Simple data object. Also construct the result string according to it's current value
+ * Simple data object. To get the result string use getResultMessage. There is also a draw result that represent if the draw
+ * was valid or not
  * @author pa
  *
  */
