@@ -39,9 +39,9 @@ public class DrawTest extends TestCase {
 			test.put("Participant " + i,"1");
 		}
 		lottery.draw();
-		assertEquals("First prize pool is incorect",375.0, lottery.getResult().getFirstPrize() );
-		assertEquals("Second prize pool is incorect",75.0, lottery.getResult().getSecondPrize() );
-		assertEquals("Third prize pool is incorect",50.0, lottery.getResult().getThirdPrize() );
+		assertEquals("First prize pool is incorect",300.0, lottery.getResult().getFirstPrize() );
+		assertEquals("Second prize pool is incorect",60.0, lottery.getResult().getSecondPrize() );
+		assertEquals("Third prize pool is incorect",40.0, lottery.getResult().getThirdPrize() );
 		assertTrue(lottery.getResult().getFirstWinner().startsWith("Participant "));
 		assertTrue(lottery.getResult().getSecondWinner().startsWith("Participant "));
 		assertTrue(lottery.getResult().getThirdWinner().startsWith("Participant "));

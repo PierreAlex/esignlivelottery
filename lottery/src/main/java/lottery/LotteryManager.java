@@ -39,7 +39,7 @@ public class LotteryManager {
 			return;
 		}
 		Random random = new Random();
-		int totalPot = INITIAL_POT + participationList.size() * COSTPERPARTICIPATION / 2;
+		int totalPot = (INITIAL_POT + participationList.size() * COSTPERPARTICIPATION) / 2;
 		result.setFirstPrize(totalPot * 0.75);
 		result.setSecondPrize(totalPot * 0.15);
 		result.setThirdPrize(totalPot * 0.10);
