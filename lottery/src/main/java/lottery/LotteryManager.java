@@ -3,6 +3,11 @@ package lottery;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * The lottery manager in charge of doing the draw and setting the result.
+ * @author pa
+ *
+ */
 public class LotteryManager {
 	
 	private static final int INITIAL_POT = 200;
@@ -24,6 +29,10 @@ public class LotteryManager {
 		return PARTICIPANT_ADDED_PARTICIPANT_NUMBER + participationList.size();
 	}
 	
+	/**
+	 * Get the current result. If no draw have been done the result will be unsuccessful 
+	 * @return
+	 */
 	public LotteryResult getResult() {
 		return result;
 	}

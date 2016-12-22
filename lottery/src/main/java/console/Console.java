@@ -6,6 +6,11 @@ import command.CommandParser;
 import command.CommandType;
 import lottery.LotteryManager;
 
+/**
+ * The console class handling user input. This is the main class
+ * @author pa
+ *
+ */
 public class Console 
 {
 	private static final String THANK_YOU_FOR_USING_E_SIGN_LIVE_LOTERY_SOFTWARE = "Thank you for using ESignLive lotery software.";

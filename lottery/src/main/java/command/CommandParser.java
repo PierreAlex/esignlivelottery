@@ -16,6 +16,12 @@ public final class CommandParser {
 	private static final String COMMAND_IS_EMPTY = "Command is empty.";
 	private static final String MISSING_NAME = "Missing name : Please use purchase (name)";
 
+	/**
+	 * Parse a string and return a command. If the string is invalid it will return an invalid command with an error message as
+	 * a parameter. If the command if a purchase it will include it's name in the parameter field.
+	 * @param toParse
+	 * @return
+	 */
 	public static Command parseCommand(String toParse){
 		
 		//we make sure the command is not null or empty.

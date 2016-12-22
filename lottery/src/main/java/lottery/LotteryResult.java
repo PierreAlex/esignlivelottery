@@ -1,7 +1,7 @@
 package lottery;
 
 /**
- * Pojo object storing the result.
+ * Simple data object. Also construct the result string according to it's current value
  * @author pa
  *
  */
