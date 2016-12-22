@@ -14,7 +14,7 @@ import lottery.LotteryManager;
 public class Console 
 {
 	private static final String THANK_YOU_FOR_USING_E_SIGN_LIVE_LOTERY_SOFTWARE = "Thank you for using ESignLive lotery software.";
-	public static final String CORRECT_FORM_MESSAGE = "Please enter purchase (name) or draw or winners";
+	private static final String CORRECT_FORM_MESSAGE = "Please enter purchase (name) or draw or winners";
 	private static final String WELCOME_MESSAGE = "Welcome to the lotery app.";
 	
     public static void main( String[] args )
